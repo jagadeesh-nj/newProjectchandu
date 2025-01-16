@@ -1,0 +1,24 @@
+
+
+ 
+
+<suite name="Suite1"  >
+<listeners>
+<listener class-name="Utilities.Listeners"/>
+</listeners>
+
+  <test name="Nopackage" >
+
+    <classes>
+       
+       <class name="amazon.SearchProductTest" />
+       
+    </classes>
+
+  </test>
+
+ 
+
+  
+
+</suite>
