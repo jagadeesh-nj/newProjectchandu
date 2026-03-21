@@ -6,6 +6,9 @@ jobs:
    steps:
      - name: get code
        uses: actions/checkout@v6
+       with:
+        repository: jagadeesh-nj/newProjectchandu
+        token: ${{ secrets.GITHUB_TOKEN }}
      - name: install java latest version
        uses: actions/setup-java@v5
        with:
