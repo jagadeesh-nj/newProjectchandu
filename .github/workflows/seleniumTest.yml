@@ -12,6 +12,6 @@ jobs:
         distribution: 'temurin' # See 'Supported distributions' for available options
         java-version: '25'
      - name: Setup Maven Action
-       uses: s4u/setup-maven-action@v2
+       uses: s4u/setup-maven-action@v1.19.0
        with:
         maven-version: 3.9.6
