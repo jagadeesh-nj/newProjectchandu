@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite1]">
-  <listeners>
-    <listener class-name="Utilities.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Nopackage(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="amazon.SearchProductTest">
+      <class name="amazon.StandalonepageTest">
         <methods>
-          <include name="launchApplication"/>
-          <include name="SelectproductTEST"/>
-          <include name="tearDown"/>
+          <include name="testAmazon"/>
         </methods>
-      </class> <!-- amazon.SearchProductTest -->
+      </class> <!-- amazon.StandalonepageTest -->
     </classes>
-  </test> <!-- Nopackage(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

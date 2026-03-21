@@ -16,7 +16,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StandalonepageTest {
     
-    public static void main(String[] args) {
+	@Test
+	public void testAmazon() {
 		WebDriverManager.chromedriver().setup();
 
 	    ChromeOptions options = new ChromeOptions();
