@@ -3,9 +3,7 @@
  
 
 <suite name="Suite1"  >
-<listeners>
-<listener class-name="Utilities.Listeners"/>
-</listeners>
+
 
   <test name="Nopackage" >
 
