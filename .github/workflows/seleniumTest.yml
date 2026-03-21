@@ -1,0 +1,17 @@
+name: seleniumTest run
+on: workflow_dispatch
+jobs:
+  test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: get code
+       uses: actions/checkout@v6
+     - name: install java latest version
+       uses: actions/setup-java@v5
+       with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
+        java-version: '25'
+     - name: Setup Maven Action
+       uses: s4u/setup-maven-action@v2
+       with:
+        maven-version: 3.9.6
