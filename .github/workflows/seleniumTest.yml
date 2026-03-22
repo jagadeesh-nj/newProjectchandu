@@ -19,6 +19,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           cache: 'maven'
-
+      - name: Clear WebDriver cache
+        run: rm -rf ~/.cache/selenium  
       - name: Clean build
         run: mvn clean install -U
