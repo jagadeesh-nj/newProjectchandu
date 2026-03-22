@@ -33,3 +33,10 @@ jobs:
         run: rm -rf ~/.cache/selenium  
       - name: Clean build
         run: mvn clean install -U
+
+  reportGeneration:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: report
+        run: echo 'report generated'
