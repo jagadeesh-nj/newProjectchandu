@@ -11,14 +11,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class StandalonepageTest {
     
 	@Test
 	public void testAmazon() {
-		WebDriverManager.chromedriver().setup();
 
 	    ChromeOptions options = new ChromeOptions();
 	    options.addArguments("--headless=new");
