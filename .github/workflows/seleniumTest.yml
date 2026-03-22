@@ -5,7 +5,7 @@ on:
   workflow_call:
     inputs:
          applicationUnderTest:
-           required: false
+           required: true
            type: string
 
          email_Notification_Recepients:
