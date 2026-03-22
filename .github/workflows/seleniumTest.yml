@@ -1,6 +1,16 @@
 name: seleniumTest run
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+         applicationUnderTest:
+           required: false
+           type: string
+
+         email_Notification_Recepients:
+          required: false
+          type: string
 
 jobs:
   test:
