@@ -2,15 +2,15 @@ name: seleniumTest run
 
 on:
   workflow_dispatch:
-  workflow_call:
     inputs:
-         applicationUnderTest:
-           required: true
-           type: string
-
-         email_Notification_Recepients:
-          required: false
-          type: string
+      applicationUnderTest:
+        description: 'Select application'
+        required: true
+        default: amazon
+        type: choice
+        options:
+          - amazon
+          - flipkart
 
 jobs:
   test:
