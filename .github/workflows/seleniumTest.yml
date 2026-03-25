@@ -37,11 +37,15 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: seleniumreports
-          path: reportsTest
+          path: reports
 
   reportGeneration:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - name: report
-        run: echo 'report generated'
+      - name: downoload report
+        uses: actions/download-artifact@v4
+        with:
+          name: seleniumreports
+      - name: check the contents of downloaded report
+        run: ls
