@@ -33,6 +33,11 @@ jobs:
         run: rm -rf ~/.cache/selenium  
       - name: Clean build
         run: mvn clean install -U
+      - name: generate Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: seleniumreports
+          path: reports
 
   reportGeneration:
     needs: test
